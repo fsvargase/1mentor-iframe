@@ -8,6 +8,7 @@ import * as iFrameResize from 'iframe-resizer';
 })
 export class AppComponent implements AfterViewInit {
   title = 'iframe-para-react';
+  // https://dev-test.1mentor.io/
 
   ngAfterViewInit() {
     // Inicializar el iframe una vez que la vista esté lista.
@@ -16,7 +17,7 @@ export class AppComponent implements AfterViewInit {
 
   private initIframe() {
     const iframe = document.createElement('iframe');
-    iframe.src = 'https://dev-test.1mentor.io/'; // Reemplaza esto con la URL correcta de la aplicación React.
+    iframe.src = 'https://liderly-test.1mentor.io/'; // Reemplaza esto con la URL correcta de la aplicación React.
     iframe.id = 'reactIframe';    
     iframe.style.width = '100vw';
     iframe.style.height = '80vh';
