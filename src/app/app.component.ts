@@ -20,6 +20,8 @@ export class AppComponent implements AfterViewInit {
     //iframe.src = 'https://liderly-test.1mentor.io/'; // Reemplaza esto con la URL correcta de la aplicación React.
     iframe.src = 'https://dev-test.1mentor.io/'; // Reemplaza esto con la URL correcta de la aplicación React.    
     iframe.id = 'reactIframe';    
+    iframe.sandbox.add("allow-storage-access-by-user-activation") ;
+    iframe.sandbox.add("allow-same-origin") ;
     iframe.style.width = '100vw';
     iframe.style.height = '80vh';
     iframe.style.border = 'none';
