@@ -12,7 +12,7 @@ export class AppComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     // Inicializar el iframe una vez que la vista esté lista.
-    //this.initIframe();
+    this.initIframe();
   }
 
   private initIframe() {
@@ -20,7 +20,7 @@ export class AppComponent implements AfterViewInit {
     //iframe.src = 'https://liderly-test.1mentor.io/'; // Reemplaza esto con la URL correcta de la aplicación React.
     iframe.src = 'https://dev-test.1mentor.io/'; // Reemplaza esto con la URL correcta de la aplicación React.    
     iframe.id = 'reactIframe';    
-    iframe.setAttribute('sandbox','allow-storage-access-by-user-activation');
+    iframe.setAttribute('sandbox','allow-storage-access-by-user-activation  allow-scripts  allow-same-origin');
     //iframe.sandbox.add("allow-storage-access-by-user-activation") ;
     //iframe.sandbox.add("allow-same-origin") ;
     //iframe.sandbox.add("allow-scripts");
