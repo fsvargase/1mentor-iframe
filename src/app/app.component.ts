@@ -22,6 +22,7 @@ export class AppComponent implements AfterViewInit {
     iframe.id = 'reactIframe';    
     iframe.sandbox.add("allow-storage-access-by-user-activation") ;
     iframe.sandbox.add("allow-same-origin") ;
+    iframe.sandbox.add("allow-scripts");
     iframe.style.width = '100vw';
     iframe.style.height = '80vh';
     iframe.style.border = 'none';
