@@ -12,7 +12,7 @@ export class AppComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     // Inicializar el iframe una vez que la vista esté lista.
-    this.initIframe();
+    //this.initIframe();
   }
 
   private initIframe() {
